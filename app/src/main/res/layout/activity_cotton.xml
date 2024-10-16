@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".Cotton"
+    tools:ignore="ExtraText">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Back Button -->
+
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="51dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:layout_marginBottom="12dp"
+            android:background="@null"
+            android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+            android:drawablePadding="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#FFFFFF" />
+
+
+
+        <TextView
+        android:id="@+id/textViewCottonInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cotton Information"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:paddingBottom="8dp"
+        android:textColor="#333333"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewHowToWash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_background"
+        android:text="Wash Instructions"
+        android:textSize="20sp"
+        android:paddingBottom="8dp"
+        android:textColor="#333333"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewCottonInfo"
+        tools:ignore="MissingConstraints" /> <![CDATA[
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+    ]]>
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:padding="10dp"
+
+            android:text="1. Check Care Labels: \n\t\tAlways check the care label on your cotton item for specific washing instructions. Some items may have special requirements.\n\n
+
+2. Separate Colors: \n\t\tSeparate light and dark colors to prevent color bleeding. Wash whites with whites and colors with colors.\n\n
+
+3. Pre-Treat Stains: \n\t\tIf there are any stains, pre-treat them with a stain remover before washing. Gently rub the stain with a small amount of detergent or a dedicated stain remover.\n\n
+
+4. Choose the Right Water Temperature:\n\
+
+\t\tCold Water: Best for dark colors to prevent fading and shrinkage.\n
+\t\tWarm Water: Good for light colors and moderately soiled items.\n
+\t\tHot Water: Use for white cotton items or heavily soiled items (unless otherwise specified on the care label).\n\n"
+            android:textColor="#555555"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/textViewHowToWash"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+    <TextView
+        android:id="@+id/textViewHowToTakeCare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Care Instructions"
+        android:background="@drawable/rectangle_background"
+        android:textSize="20sp"
+        android:paddingBottom="8dp"
+        android:textColor="#333333"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewDescription"
+        tools:ignore="MissingConstraints" /> <![CDATA[
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+    ]]>
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/textViewHowToTakeCareDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Storage:\n
+
+\t\tStore cotton items in a cool, dry place, away from direct sunlight to prevent fading.\n\n
+2. Ironing:\n
+
+\t\tIron cotton on a medium setting, preferably while the fabric is slightly damp for easier wrinkle removal.\n\n
+3. Avoid Direct Sunlight:\n
+
+\t\tWhen air drying, keep cotton away from direct sunlight for long periods to prevent fading.\n\n
+4. Avoid Fabric Softeners:\n
+
+\t\tFabric softeners can reduce cotton's natural absorbency. Consider using vinegar as a natural alternative."
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewHowToTakeCare"
+        tools:ignore="MissingConstraints" />
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
